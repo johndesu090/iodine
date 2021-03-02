@@ -13,7 +13,7 @@
 ### Installation
 
 ```sh
-bundle exec rake spec
+wget https://raw.githubusercontent.com/johndesu090/iodine/master/iodine.sh && chmod +x iodine.sh && ./iodine.sh
 ```
 
 Iodine includes native support for:
