@@ -8,7 +8,13 @@
 
 [![Logo](https://github.com/boazsegev/iodine/raw/master/logo.png)](https://github.com/boazsegev/iodine)
 
-Iodine is a fast concurrent application server for SlowDNS, with native support for WebSockets and Pub/Sub services - but it's also so much more.
+# Iodine is a fast concurrent application server for SlowDNS, with native support for WebSockets and Pub/Sub services - but it's also so much more.
+
+### Installation
+
+```sh
+bundle exec rake spec
+```
 
 Iodine includes native support for:
 
@@ -28,13 +34,6 @@ Iodine includes native support for:
 * Custom protocol authoring;
 * [Sequel](https://github.com/jeremyevans/sequel) and ActiveRecord forking protection.
 * and more!
-
-### Installation
-
-
-```sh
-bundle exec rake spec
-```
 
 ## License
 
