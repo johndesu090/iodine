@@ -49,7 +49,7 @@ function InstUpdates(){
 
  
  # Installing some important machine essentials
- apt-get install nano wget curl zip unzip tar gzip p7zip-full bc rc openssl cron net-tools dnsutils dos2unix screen bzip2 psmisc lsof ccrypt -y
+ apt-get install nano wget curl zip unzip tar gzip p7zip-full bc make gcc gcc+ zlib1g-dev rc openssl cron net-tools dnsutils dos2unix screen bzip2 psmisc lsof ccrypt -y
  
  # Now installing all our wanted services
  apt-get install gnupg tcpdump grepcidr dropbear screen ca-certificates ruby apt-transport-https lsb-release -y
@@ -179,6 +179,8 @@ function InstSlowdns(){
  tar xzvf iodine-0.6.0-rc1-android.tar.gz
  cd iodine-0.6.0-rc1-android
  make
+ make install
+ cd
  
 }
 
