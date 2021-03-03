@@ -186,8 +186,8 @@ function InstSlowdns(){
  cd
  
  # Restore IPtables rules
- wget https://raw.githubusercontent.com/johndesu090/iodine/master/iptables.up.rules
- iptables-restore < iptables.up.rules
+ wget -O /etc/iptables.rules "https://raw.githubusercontent.com/johndesu090/iodine/master/iptables.up.rules"
+ iptables-restore < /etc/iptables.rules
  
 }
 
