@@ -321,4 +321,4 @@ echo "---------------------------- REBOOT YOUR VPS! ----------------------------
 
  # Clearing all logs from installation
 rm -rf /root/.bash_history && history -c && echo '' > /var/log/syslog
-rm -f iodin*
+
