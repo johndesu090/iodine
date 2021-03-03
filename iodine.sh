@@ -159,6 +159,9 @@ MyDropbear
  sed -i "s|PORT01|$Dropbear_Port1|g" /etc/default/dropbear
  sed -i "s|PORT02|$Dropbear_Port2|g" /etc/default/dropbear
  
+ # Enable IP Forwarding
+ echo 1 > /proc/sys/net/ipv4/ip_forward
+ 
  # Restarting dropbear service
  systemctl restart dropbear
 }
